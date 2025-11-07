@@ -1,0 +1,33 @@
+# Dependências e builds
+node_modules/
+dist/
+build/
+.cache/
+
+# Arquivos temporários do sistema Linux
+*~
+*.swp
+*.swo
+
+ 
+
+# Arquivos ocultos do sistema
+.DS_Store        # macOS (caso alguém use)
+Thumbs.db        # Windows (caso alguém use)
+
+# Logs
+*.log
+
+ 
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.*.local
+
+# Ignorar imagens geradas automaticamente (ex.: thumbnails, cache)
+images/cache/
+images/temp/
+
+# Ignorar arquivos texto 
+*.txt
