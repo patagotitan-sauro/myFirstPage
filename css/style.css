@@ -24,8 +24,6 @@ h2 {
 .responsive-img {
     width: 30%; /* Responsive width */
     height: auto; /* Maintain aspect ratio */
-    display: block; /* Ensure margins apply correctly */
-    margin: 0 auto; /* Center the image horizontally */
 }
 
 
