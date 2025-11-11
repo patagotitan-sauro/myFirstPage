@@ -26,4 +26,7 @@ h2 {
     height: auto; /* Maintain aspect ratio */
 }
 
-
+.grid-img {
+    width: 100%; /* Full width in grid */
+    height: auto; /* Maintain aspect ratio */
+}
