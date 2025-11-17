@@ -1,23 +1,29 @@
 /* General Body Styles */
+
 body {
     font-family: Helvetica, Arial, sans-serif; /* Set general font */
+    font-size: 100%;
     margin: 10px; /* Add some margin */
-    background-color: #e6e6e6; /* Light gray background */; 
+    background-color: #d6d597; /* Light gray background */; 
 
+}
+
+footer {    
+    font-size: 110%; /* Slightly smaller font size */
+}
 /* Heading Styles */
 
 h1, h2 {
-    background-color: #b3b3b3; /* #f4f4f4 Light gray background */
-    text-align: justify; /* Center align headings */
+    text-align: justify; 
 }
 
 h1 {
     font-variant-caps: small-caps;
-    color: #373668; /* main heading */
+    
 }
 h2 {
     font-style: italic;
-    color: #1f0ebb; /* ubheadings */
+    
 }
 
 /* Paragraph Styles */
@@ -39,24 +45,38 @@ span {
 /* Image Styles */
 
 img {
-    width: 25%; /* Responsive width */
-    height: auto; /* Maintain aspect ratio */
-    
+    width: 30%; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */    
 }
-.div-img {
-    display: block;
-    margin-left: 5px auto; /* Center the image */
-    width: 25%; /* Set a specific width */
-    height: auto; /* Maintain aspect ratio */
-}
+
 .image-container {
     display: grid; /* Use grid layout */
-    grid-template-columns: repeat(3,1fr); /* 3 equal columns */
-    gap: 2px; /* Space between grid items */
+    grid-template-columns: 30% 30% 30%; /*repeat(3,1fr) 3 equal columns */
+    justify-content: space-between; /* Space between columns */
+    /* gap: 2px;Space between grid items */
 }
+
 .grid-img {
     width: 100%; /* Full width in grid */
     height: auto; /* Maintain aspect ratio */
 }
 
+.container {
+    display: grid; /* Use flexbox layout */
+    grid-template-columns: 40% 60% /* Two equal columns */
+    justify-content: space-between; /* Space between columns */
+}
+
+.text {
+    grid-column: 1;  /* Text in first column */
+    grid-row: span 1;
+    
+    
+}
+.container-img {
+    grid-column: 2;
+    width: 120%; /* Full width in container */
+    height: auto; /* Maintain aspect ratio */
+    
+}
 
