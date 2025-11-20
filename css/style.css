@@ -1,17 +1,49 @@
-/* General Body Styles */
+/*----------------------------------------
+    Reset and Base Styles
+------------------------------------------*/
+/* Verificar a utilidade de criar esses reset and base styles */
+
+/* ----------------------------------------
+    Global Variables and Body Styles 
+------------------------------------------*/
+:root {
+    --main-bg-color: #d6d597;
+    --primary_font: Helvetica, Arial, sans-serif;
+ 
+}
 
 body {
-    font-family: Helvetica, Arial, sans-serif; /* Set general font */
+    background-color: var(--main-bg-color); /* Use main background color */
+    font-family: var(--primary_font); /* Use primary font */
     font-size: 100%;
     margin: 10px; /* Add some margin */
-    background-color: #d6d597; /* Light gray background */; 
+}
 
+/* ----------------------------------------
+    Semantic Tags Styles
+------------------------------------------*/
+
+section {
+    margin-bottom: 20px; /* Space between sections */
+    padding: 10px; /* Padding inside sections */
+    background-color: #f0ecb1; /* Light background for sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.main-topics {
+    font-size: 100%; /* Slightly larger font size */
+    /* font-weight: bold; Bold text */
 }
 
 footer {    
     font-size: 110%; /* Slightly smaller font size */
 }
-/* Heading Styles */
+
+
+/* ----------------------------------------
+    Heading and Paragraph Styles
+------------------------------------------*/
 
 h1, h2 {
     text-align: justify; 
@@ -26,8 +58,6 @@ h2 {
     
 }
 
-/* Paragraph Styles */
-
 p {
     line-height: 1.6; /* Improve readability */
     color: #333; /* Dark gray text */
@@ -35,43 +65,49 @@ p {
     display: inline-block;
 } 
 
-
 span {
     
     font-weight: bold;
 } 
 
-
-/* Image Styles */
+/* ----------------------------------------
+    Image Styles
+------------------------------------------*/    
 
 img {
     width: 30%; /* Responsive width */
     height: auto; /* Maintain aspect ratio */    
 }
 
+/* ----------------------------------------
+    Container for images and Galleries
+------------------------------------------*/
 .image-container {
-    display: grid; /* Use grid layout */
-    grid-template-columns: 30% 30% 30%; /*repeat(3,1fr) 3 equal columns */
-    justify-content: space-between; /* Space between columns */
-    /* gap: 2px;Space between grid items */
+    
+    /* display: flex; */
+    /* flex-wrap:wrap; */
+    display: grid; 
+    grid-template-columns: repeat(3, 31%); 
+    justify-content: space-between;   
+    
 }
-
 .grid-img {
     width: 100%; /* Full width in grid */
     height: auto; /* Maintain aspect ratio */
 }
 
+/* ----------------------------------------
+    Container for Text and Image Side by Side
+------------------------------------------*/    
 .container {
     display: grid; /* Use flexbox layout */
-    grid-template-columns: 40% 60% /* Two equal columns */
+    grid-template-columns: 80% 50% /* Two equal columns */
+    grid-template-rows: auto; /* Single row */
     justify-content: space-between; /* Space between columns */
 }
 
 .text {
     grid-column: 1;  /* Text in first column */
-    grid-row: span 1;
-    
-    
 }
 .container-img {
     grid-column: 2;
